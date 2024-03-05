@@ -1,0 +1,4 @@
+{
+  "extends": ["github>multani/renovate-config"],
+  "automerge": true,
+}
