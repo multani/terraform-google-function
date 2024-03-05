@@ -6,8 +6,8 @@ This is a personal (opiniated) Terraform module to manage [Google Cloud Function
 
 ```hcl
 module "stuff" {
-  source  = "app.terraform.io/multani/function/google"
-  version = "1.0.0"
+  source  = "multani/function/google"
+  version = "1.0.2"
 
   name        = "do-stuff"
   description = "Do some stuff"

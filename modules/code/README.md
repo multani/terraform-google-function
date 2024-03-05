@@ -9,8 +9,8 @@ It uploads source code to a Google Cloud Storage bucket and "version" it using a
 
 ```hcl
 module "functions" {
-  source  = "app.terraform.io/multani/function/google//modules/code"
-  version = "1.0.0"
+  source  = "multani/function/google//modules/code"
+  version = "1.0.2"
 
   name        = "my-functions"
   source_dir  = "${path.module}/src"
