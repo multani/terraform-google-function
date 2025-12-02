@@ -23,7 +23,7 @@ jobs:
         working-directory: ${{ matrix.directory }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
@@ -53,7 +53,7 @@ jobs:
         working-directory: ${{ matrix.directory }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
@@ -64,7 +64,7 @@ jobs:
         run: terraform init -backend=false
 
       - name: Setup tflint
-        uses: terraform-linters/setup-tflint@v4
+        uses: terraform-linters/setup-tflint@4cb9feea73331a35b422df102992a03a44a3bb33 # v6
         with:
           # https://github.com/terraform-linters/tflint/blob/master/docs/user-guide/plugins.md#avoiding-rate-limiting
           github_token: ${{ github.token }}
