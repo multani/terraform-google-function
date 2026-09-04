@@ -64,7 +64,7 @@ jobs:
         run: terraform init -backend=false
 
       - name: Setup tflint
-        uses: terraform-linters/setup-tflint@4cb9feea73331a35b422df102992a03a44a3bb33 # v6
+        uses: terraform-linters/setup-tflint@1cf010d3c7aef302051ccdb68c14c5dc2efa34ef # v6
         with:
           # https://github.com/terraform-linters/tflint/blob/master/docs/user-guide/plugins.md#avoiding-rate-limiting
           github_token: ${{ github.token }}
